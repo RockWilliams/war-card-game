@@ -298,10 +298,16 @@ class Player {
         const cpuCard = player.deck.shift();
         const playerCard = cpu.deck.shift();
 
+        let playerTopCard = player.hand.length-1;
+        let cpuTopCard = cpu.hand.length-1;
+
         cpu.hand.push(cpuCard);
         player.hand.push(playerCard);
 
-        console.log("comparing");
+        console.log("Cpu Card:");
+        console.log(cpu.hand[cpu.hand.length-1]);
+        console.log("Player Card:");
+        console.log(player.hand[player.hand.length-1]);
         console.log(`Cpu deck length: ${cpu.deck.length}, Player deck length: ${player.deck.length}`);
     }
     clear() {
@@ -324,9 +330,12 @@ class Player {
         } else if (player.hand[playerTopCard].value < cpu.hand[cpuTopCard].value) {
             console.log("cpu wins!");
             cpu.points++;
-            winner = "cpu"
-        } else {
-            console.log("War!!!");
+            winner = "cpu";
+        } else if(player.hand[playerTopCard].value === cpu.hand[cpuTopCard].value) {
+            console.log("=== Prepare For War!! ===");
+            player.compareCards();
+            player.compareCards();
+            player.compareCards();
         }
 
         if(winner === "player"){
@@ -360,6 +369,8 @@ class Player {
                 let card = cpu.hand.shift();
                 cpu.deck.push(card);
             }
+
+            console.log(`Player deck: ${cpu.deck.length} cards`);
 
             /* for(let i = 0; i < cpu.hand.length; i++) {
                 let card = player.hand.shift();
