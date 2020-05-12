@@ -294,6 +294,8 @@ class Player {
         this.points = 0;
     }
     compareCards(){
+        $(".player__deck__back").css("display","block");
+        $(".cpu__deck__back").css("display","block");
         // move cards to cards in play
         const cpuCard = player.deck.shift();
         const playerCard = cpu.deck.shift();
@@ -311,6 +313,10 @@ class Player {
         console.log(`Cpu deck length: ${cpu.deck.length}, Player deck length: ${player.deck.length}`);
     }
     clear() {
+
+        // $(".player__deck__back").css("display","none");
+        // $(".cpu__deck__back").css("display","none");
+
         let playerTopCard = player.hand.length;
         let cpuTopCard = cpu.hand.length;
 
@@ -378,6 +384,14 @@ class Player {
                 console.log(`Cpu deck: ${cpu.deck.length} cards`);
             } */
         }
+    }
+}
+
+const isGameOver = () => {
+    if(player.deck.length === 0) {
+        return alert("Cpu Won the War");
+    } else if(cpu.deck.length === 0) {
+        return alert("Player Won the War");
     }
 }
 
@@ -460,12 +474,14 @@ $deal.on("click",function(event){
 
 const $draw = $("#draw");
 $draw.on("click",function(event){
+    isGameOver();
     console.log("=== Drawing ===");
     player.compareCards();
 });
 
 const $clear = $("#clear");
 $clear.on("click",function(event){
+    isGameOver();
     console.log("=== Clearing Hands ===");
     player.clear();
 });
