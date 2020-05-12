@@ -332,20 +332,40 @@ class Player {
         if(winner === "player"){
             // let moving = [];
 
-            for(let i = 0; i < player.hand.length; i++) {
-                let card = player.hand[0].shift;
+            while(player.hand.length > 0) {
+                let card = player.hand.shift();
+                player.deck.push(card);
+            }
+            while(cpu.hand.length > 0) {
+                let card = cpu.hand.shift();
+                player.deck.push(card);
+            }
+
+            console.log(`Player deck: ${player.deck.length} cards`);
+
+            /* for(let i = 0; i < player.hand.length; i++) {
+                let card = player.hand.shift();
                 player.deck.push(card);
 
                 console.log(`Player deck: ${player.deck.length} cards`);
-            }
+            } */
         } else if(winner === "cpu"){
             // let moving = [];
 
-            for(let i = 0; i < cpu.hand.length; i++) {
-                let card = player.hand[0].shift;
+            while(player.hand.length > 0) {
+                let card = player.hand.shift();
+                cpu.deck.push(card);
+            }
+            while(cpu.hand.length > 0) {
+                let card = cpu.hand.shift();
+                cpu.deck.push(card);
+            }
+
+            /* for(let i = 0; i < cpu.hand.length; i++) {
+                let card = player.hand.shift();
                 cpu.deck.push(card);
                 console.log(`Cpu deck: ${cpu.deck.length} cards`);
-            }
+            } */
         }
     }
 }
