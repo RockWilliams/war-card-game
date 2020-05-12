@@ -290,8 +290,79 @@ class Player {
     constructor(name) {
         this.name = name;
         this.deck = [];
+        this.hand = [];
+        this.points = 0;
+    }
+    compareCards(){
+        // move cards to cards in play
+        const cpuCard = player.deck.shift();
+        const playerCard = cpu.deck.shift();
+
+        cpu.hand.push(cpuCard);
+        player.hand.push(playerCard);
+
+        console.log("comparing");
+        console.log(`Cpu deck length: ${cpu.deck.length}, Player deck length: ${player.deck.length}`);
+    }
+    clear() {
+        let playerTopCard = player.hand.length;
+        let cpuTopCard = cpu.hand.length;
+
+        if(cpuTopCard > 0) {
+            playerTopCard--;
+        }
+        if(cpuTopCard > 0) {
+            cpuTopCard--;
+        }
+
+        let winner = "";
+
+        if(player.hand[playerTopCard].value > cpu.hand[cpuTopCard].value) {
+            console.log("player wins!");
+            player.points++;
+            winner = "player";
+        } else if (player.hand[playerTopCard].value < cpu.hand[cpuTopCard].value) {
+            console.log("cpu wins!");
+            cpu.points++;
+            winner = "cpu"
+        } else {
+            console.log("War!!!");
+        }
+
+        if(winner === "player"){
+            // let moving = [];
+
+            for(let i = 0; i < player.hand.length; i++) {
+                let card = player.hand[0].shift;
+                player.deck.push(card);
+
+                console.log(`Player deck: ${player.deck.length} cards`);
+            }
+        } else if(winner === "cpu"){
+            // let moving = [];
+
+            for(let i = 0; i < cpu.hand.length; i++) {
+                let card = player.hand[0].shift;
+                cpu.deck.push(card);
+                console.log(`Cpu deck: ${cpu.deck.length} cards`);
+            }
+        }
     }
 }
+
+const setTimer = () => { // subroutine - constantly runs in background
+    let time = 3;
+    const timer = setInterval(() => {
+        console.log(time);
+        if(time === 0){
+            clearInterval(timer);
+        }
+        time--;
+    }, 1000);
+    if(time === 0) {
+        console.log("done")
+    }
+};
 
 class Card {
     constructor(name,value){
@@ -349,3 +420,21 @@ const cpu = new Player("cpu");
 
 const deck = new Deck();
 deck.generateDeck(fullDeck);
+
+const $deal = $("#deal");
+$deal.on("click",function(event){
+    console.log("=== Dealing! ===")
+    deck.deal();
+});
+
+const $draw = $("#draw");
+$draw.on("click",function(event){
+    console.log("=== Drawing ===");
+    player.compareCards();
+});
+
+const $clear = $("#clear");
+$clear.on("click",function(event){
+    console.log("=== Clearing Hands ===");
+    player.clear();
+});
