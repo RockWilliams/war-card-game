@@ -27,262 +27,314 @@ const fullDeck = [
     {
         name: "Ace of Spades",
         value: 14,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Playing_card_spade_A.svg/800px-Playing_card_spade_A.svg.png"
     },
     {
         name: "Two of Spades",
         value: 2,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Playing_card_spade_2.svg/800px-Playing_card_spade_2.svg.png"
     },
     {
         name: "Three of Spades",
         value: 3,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Playing_card_spade_3.svg/800px-Playing_card_spade_3.svg.png"
     },
     {
         name: "Four of Spades",
         value: 4,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Playing_card_spade_4.svg/800px-Playing_card_spade_4.svg.png"
     },
     {
         name: "Five of Spades",
         value: 5,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Playing_card_spade_5.svg/800px-Playing_card_spade_5.svg.png"
     },
     {
         name: "Six of Spades",
         value: 6,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Playing_card_spade_6.svg/800px-Playing_card_spade_6.svg.png"
     },
     {
         name: "Seven of Spades",
         value: 7,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Playing_card_spade_7.svg/800px-Playing_card_spade_7.svg.png"
     },
     {
         name: "Eight of Spades",
         value: 8,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Playing_card_spade_8.svg/800px-Playing_card_spade_8.svg.png"
     },
     {
         name: "Nine of Spades",
         value: 9,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Playing_card_spade_9.svg/800px-Playing_card_spade_9.svg.png"
     },
     {
         name: "Ten of Spades",
         value: 10,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Playing_card_spade_10.svg/800px-Playing_card_spade_10.svg.png"
     },
     {
         name: "Jack of Spades",
         value: 11,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Playing_card_spade_J.svg/800px-Playing_card_spade_J.svg.png"
     },
     {
         name: "Queen of Spades",
         value: 12,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Playing_card_spade_Q.svg/800px-Playing_card_spade_Q.svg.png"
     },
     {
         name: "King of Spades",
         value: 13,
-        suit: "Spades"
+        suit: "Spades",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Playing_card_spade_K.svg/800px-Playing_card_spade_K.svg.png"
     },
     {
         name: "Ace of Clubs",
         value: 14,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Playing_card_club_A.svg/800px-Playing_card_club_A.svg.png"
     },
     {
         name: "Two of Clubs",
         value: 2,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Playing_card_club_2.svg/800px-Playing_card_club_2.svg.png"
     },
     {
         name: "Three of Clubs",
         value: 3,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Playing_card_club_3.svg/800px-Playing_card_club_3.svg.png"
     },
     {
         name: "Four of Clubs",
         value: 4,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Playing_card_club_4.svg/800px-Playing_card_club_4.svg.png"
     },
     {
         name: "Five of Clubs",
         value: 5,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Playing_card_club_5.svg/800px-Playing_card_club_5.svg.png"
     },
     {
         name: "Six of Clubs",
         value: 6,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Playing_card_club_6.svg/800px-Playing_card_club_6.svg.png"
     },
     {
         name: "Seven of Clubs",
         value: 7,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Playing_card_club_7.svg/800px-Playing_card_club_7.svg.png"
     },
     {
         name: "Eight of Clubs",
         value: 8,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Playing_card_club_8.svg/800px-Playing_card_club_8.svg.png"
     },
     {
         name: "Nine of Clubs",
         value: 9,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Playing_card_club_9.svg/800px-Playing_card_club_9.svg.png"
     },
     {
         name: "Ten of Clubs",
         value: 10,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Playing_card_club_10.svg/800px-Playing_card_club_10.svg.png"
     },
     {
         name: "Jack of Clubs",
         value: 11,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Playing_card_club_J.svg/800px-Playing_card_club_J.svg.png"
     },
     {
         name: "Queen of Clubs",
         value: 12,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Playing_card_club_Q.svg/800px-Playing_card_club_Q.svg.png"
     },
     {
         name: "King of Clubs",
         value: 13,
-        suit: "Clubs"
+        suit: "Clubs",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Playing_card_club_K.svg/800px-Playing_card_club_K.svg.png"
     },
     {
         name: "Ace of Diamonds",
         value: 14,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Playing_card_diamond_A.svg/800px-Playing_card_diamond_A.svg.png"
     },
     {
         name: "Two of Diamonds",
         value: 2,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Playing_card_diamond_2.svg/800px-Playing_card_diamond_2.svg.png"
     },
     {
         name: "Three of Diamonds",
         value: 3,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Playing_card_diamond_3.svg/800px-Playing_card_diamond_3.svg.png"
     },
     {
         name: "Four of Diamonds",
         value: 4,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Playing_card_diamond_4.svg/800px-Playing_card_diamond_4.svg.png"
     },
     {
         name: "Five of Diamonds",
         value: 5,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Playing_card_diamond_5.svg/800px-Playing_card_diamond_5.svg.png"
     },
     {
         name: "Six of Diamonds",
         value: 6,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Playing_card_diamond_6.svg/800px-Playing_card_diamond_6.svg.png"
     },
     {
         name: "Seven of Diamonds",
         value: 7,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Playing_card_diamond_7.svg/800px-Playing_card_diamond_7.svg.png"
     },
     {
         name: "Eight of Diamonds",
         value: 8,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Playing_card_diamond_8.svg/800px-Playing_card_diamond_8.svg.png"
     },
     {
         name: "Nine of Diamonds",
         value: 9,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Playing_card_diamond_9.svg/800px-Playing_card_diamond_9.svg.png"
     },
     {
         name: "Ten of Diamonds",
         value: 10,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Playing_card_diamond_10.svg/800px-Playing_card_diamond_10.svg.png"
     },
     {
         name: "Jack of Diamonds",
         value: 11,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Playing_card_diamond_J.svg/800px-Playing_card_diamond_J.svg.png"
     },
     {
         name: "Queen of Diamonds",
         value: 12,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Playing_card_diamond_Q.svg/800px-Playing_card_diamond_Q.svg.png"
     },
     {
         name: "King of Diamonds",
         value: 13,
-        suit: "Diamonds"
+        suit: "Diamonds",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Playing_card_diamond_K.svg/800px-Playing_card_diamond_K.svg.png"
     },
     {
         name: "Ace of Hearts",
         value: 14,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Playing_card_heart_A.svg/800px-Playing_card_heart_A.svg.png"
     },
     {
         name: "Two of Hearts",
         value: 2,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Playing_card_heart_2.svg/800px-Playing_card_heart_2.svg.png"
     },
     {
         name: "Three of Hearts",
         value: 3,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Playing_card_heart_3.svg/800px-Playing_card_heart_3.svg.png"
     },
     {
         name: "Four of Hearts",
         value: 4,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Playing_card_heart_4.svg/800px-Playing_card_heart_4.svg.png"
     },
     {
         name: "Five of Hearts",
         value: 5,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Playing_card_heart_5.svg/800px-Playing_card_heart_5.svg.png"
     },
     {
         name: "Six of Hearts",
         value: 6,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Playing_card_heart_6.svg/800px-Playing_card_heart_6.svg.png"
     },
     {
         name: "Seven of Hearts",
         value: 7,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Playing_card_heart_7.svg/800px-Playing_card_heart_7.svg.png"
     },
     {
         name: "Eight of Hearts",
         value: 8,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Playing_card_heart_8.svg/800px-Playing_card_heart_8.svg.png"
     },
     {
         name: "Nine of Hearts",
         value: 9,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Playing_card_heart_9.svg/800px-Playing_card_heart_9.svg.png"
     },
     {
         name: "Ten of Hearts",
         value: 10,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Playing_card_heart_10.svg/800px-Playing_card_heart_10.svg.png"
     },
     {
         name: "Jack of Hearts",
         value: 11,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Playing_card_heart_J.svg/800px-Playing_card_heart_J.svg.png"
     },
     {
         name: "Queen of Hearts",
         value: 12,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Playing_card_heart_Q.svg/800px-Playing_card_heart_Q.svg.png"
     },
     {
         name: "King of Hearts",
         value: 13,
-        suit: "Hearts"
+        suit: "Hearts",
+        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Playing_card_heart_K.svg/800px-Playing_card_heart_K.svg.png"
     },
 ];
 
@@ -294,8 +346,7 @@ class Player {
         this.points = 0;
     }
     compareCards(){
-        $(".player__deck__back").css("display","block");
-        $(".cpu__deck__back").css("display","block");
+        
         // move cards to cards in play
         const cpuCard = player.deck.shift();
         const playerCard = cpu.deck.shift();
@@ -314,8 +365,7 @@ class Player {
     }
     clear() {
 
-        // $(".player__deck__back").css("display","none");
-        // $(".cpu__deck__back").css("display","none");
+        
 
         let playerTopCard = player.hand.length;
         let cpuTopCard = cpu.hand.length;
@@ -390,8 +440,12 @@ class Player {
 const isGameOver = () => {
     if(player.deck.length === 0) {
         return alert("Cpu Won the War");
+        $(".player__deck__back").css("display","none");
+        $(".cpu__deck__back").css("display","none");
     } else if(cpu.deck.length === 0) {
         return alert("Player Won the War");
+        $(".player__deck__back").css("display","none");
+        $(".cpu__deck__back").css("display","none");
     }
 }
 
@@ -410,9 +464,11 @@ const setTimer = () => { // subroutine - constantly runs in background
 };
 
 class Card {
-    constructor(name,value){
+    constructor(name,value,suit){
         this.name = name;
         this.value = value;
+        this.suit = suit;
+
     }
 }
 
@@ -422,7 +478,7 @@ class Deck {
     }
     generateDeck(cardsArr){
         cardsArr.forEach(fullDeck => {
-            const card = new Card(fullDeck.name,fullDeck.value);
+            const card = new Card(fullDeck.name,fullDeck.value,fullDeck.suit);
             this.cards.push(card);
         });
     }
@@ -448,6 +504,9 @@ class Deck {
                 cpu.deck.push(deck.cards[i]);
             }
         }
+
+        $(".player__deck__back").css("display","block");
+        $(".cpu__deck__back").css("display","block");
     }
 }
 /* 
@@ -468,6 +527,8 @@ deck.generateDeck(fullDeck);
 
 const $deal = $("#deal");
 $deal.on("click",function(event){
+    player.deck = [];
+    cpu.deck = [];
     console.log("=== Dealing! ===")
     deck.deal();
 });
@@ -481,7 +542,8 @@ $draw.on("click",function(event){
 
 const $clear = $("#clear");
 $clear.on("click",function(event){
-    isGameOver();
+    
     console.log("=== Clearing Hands ===");
     player.clear();
+    isGameOver();
 });
