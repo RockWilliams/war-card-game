@@ -71,3 +71,19 @@
     height: 290px;
     display: none;
 }
+
+.cpu__pic {
+    width: 190px;
+    height: 290px;
+    display: none;
+    margin: auto;
+    z-index: 5;
+}
+
+.player__pic {
+    width: 190px;
+    height: 290px;
+    display: none;
+    margin: auto;
+    z-index: 5;
+}

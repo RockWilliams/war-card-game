@@ -357,15 +357,26 @@ class Player {
         cpu.hand.push(cpuCard);
         player.hand.push(playerCard);
 
+        $(".cpu__pic").attr("src", cpu.hand[cpu.hand.length-1].pic);
+        $(".player__pic").attr("src", player.hand[player.hand.length-1].pic);
+
+        $(".cpu__pic").css("display","block");
+        $(".player__pic").css("display","block");
+
         console.log("Cpu Card:");
         console.log(cpu.hand[cpu.hand.length-1]);
         console.log("Player Card:");
         console.log(player.hand[player.hand.length-1]);
         console.log(`Cpu deck length: ${cpu.deck.length}, Player deck length: ${player.deck.length}`);
+
+        $(".player__score").text(`Cards in player's deck: ${player.deck.length}`);
+        $(".cpu__score").text(`Cards in cpu's deck: ${cpu.deck.length}`);
     }
+
     clear() {
 
-        
+        $(".cpu__pic").css("display","none");
+        $(".player__pic").css("display","none");
 
         let playerTopCard = player.hand.length;
         let cpuTopCard = cpu.hand.length;
@@ -434,6 +445,10 @@ class Player {
                 console.log(`Cpu deck: ${cpu.deck.length} cards`);
             } */
         }
+
+        $(".player__score").text(`Cards in player's deck: ${player.deck.length}`);
+        $(".cpu__score").text(`Cards in cpu's deck: ${cpu.deck.length}`);
+
     }
 }
 
@@ -464,11 +479,11 @@ const setTimer = () => { // subroutine - constantly runs in background
 };
 
 class Card {
-    constructor(name,value,suit){
+    constructor(name,value,suit,pic){
         this.name = name;
         this.value = value;
         this.suit = suit;
-
+        this.pic = pic;
     }
 }
 
@@ -478,7 +493,7 @@ class Deck {
     }
     generateDeck(cardsArr){
         cardsArr.forEach(fullDeck => {
-            const card = new Card(fullDeck.name,fullDeck.value,fullDeck.suit);
+            const card = new Card(fullDeck.name,fullDeck.value,fullDeck.suit,fullDeck.pic);
             this.cards.push(card);
         });
     }
