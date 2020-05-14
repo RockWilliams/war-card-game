@@ -87,3 +87,24 @@
     margin: auto;
     z-index: 5;
 }
+
+#deal {
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#draw {
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+}
+
+#clear {
+    margin: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+}
