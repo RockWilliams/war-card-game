@@ -346,7 +346,7 @@ class Player {
         this.points = 0;
     }
     compareCards(){
-        
+        /* DRAW A CARD */
         // move cards to cards in play
         const cpuCard = player.deck.shift();
         const playerCard = cpu.deck.shift();
@@ -375,6 +375,7 @@ class Player {
 
     clear() {
 
+        /* COMPARE AND REMOVE CARDS FROM IN PLAY */
         $(".cpu__pic").css("display","none");
         $(".player__pic").css("display","none");
 
@@ -400,6 +401,7 @@ class Player {
             winner = "cpu";
         } else if(player.hand[playerTopCard].value === cpu.hand[cpuTopCard].value) {
             console.log("=== Prepare For War!! ===");
+            alert("Prepare For War!");
             player.compareCards();
             player.compareCards();
             player.compareCards();
@@ -464,7 +466,7 @@ const isGameOver = () => {
     }
 }
 
-const setTimer = () => { // subroutine - constantly runs in background
+/* const setTimer = () => { // subroutine - constantly runs in background
     let time = 3;
     const timer = setInterval(() => {
         console.log(time);
@@ -476,7 +478,7 @@ const setTimer = () => { // subroutine - constantly runs in background
     if(time === 0) {
         console.log("done")
     }
-};
+}; */
 
 class Card {
     constructor(name,value,suit,pic){
