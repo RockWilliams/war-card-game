@@ -31,4 +31,4 @@ Game Rules:
 Game Instructions:
 - To start the game click the Deal button to split, and shuffle the deck into each of your hands. Next, click the Draw button to draw a card and play it. Clear will move the cards to the winner's hand, but if there is a war an alert will pop up and 3 more cards will be drawn; press clear again after the war cards are distributed to clear the 6 cards to the winner.
 
-![Start Screen](Screenshot from 2020-05-15 10-24-39.png)
+![Start Screen](pictures/Screenshot from 2020-05-15 10-24-39.png)
