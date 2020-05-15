@@ -369,8 +369,8 @@ class Player {
         console.log(player.hand[player.hand.length-1]);
         console.log(`Cpu deck length: ${cpu.deck.length}, Player deck length: ${player.deck.length}`);
 
-        $(".player__score").text(`Cards in player's deck: ${player.deck.length}`);
-        $(".cpu__score").text(`Cards in cpu's deck: ${cpu.deck.length}`);
+        $(".player__score").text(`Cards in Player's hand: ${player.deck.length}`);
+        $(".cpu__score").text(`Cards in CPU's hand: ${cpu.deck.length}`);
     }
 
     clear() {
@@ -448,8 +448,8 @@ class Player {
             } */
         }
 
-        $(".player__score").text(`Cards in player's deck: ${player.deck.length}`);
-        $(".cpu__score").text(`Cards in cpu's deck: ${cpu.deck.length}`);
+        $(".player__score").text(`Cards in Player's hand: ${player.deck.length}`);
+        $(".cpu__score").text(`Cards in CPU's hand: ${cpu.deck.length}`);
 
     }
 }
@@ -524,6 +524,9 @@ class Deck {
 
         $(".player__deck__back").css("display","block");
         $(".cpu__deck__back").css("display","block");
+
+        $(".player__score").text(`Cards in Player's hand: ${player.deck.length}`);
+        $(".cpu__score").text(`Cards in CPU's hand: ${cpu.deck.length}`);
     }
 }
 /* 
