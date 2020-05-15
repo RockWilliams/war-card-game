@@ -562,3 +562,8 @@ $clear.on("click",function(event){
     player.clear();
     isGameOver();
 });
+
+const $instructions = $("#instructions");
+$instructions.on("click",function(event){
+    $(".instructions").toggle();
+});

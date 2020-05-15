@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
- body {
+body {
     background-color: green;
     height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@
     height: 300px;
     background-color: blue;
     
-    margin: 10px;
+    margin-top: 5px;
 }
 
 .cpu__card {
@@ -47,7 +47,8 @@
     height: 300px;
     background-color: blue;
     
-    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 .card {
@@ -88,23 +89,122 @@
     z-index: 5;
 }
 
+#instructions {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    margin: auto;
+    width: 190px;
+    height: 50px;
+    font-size: 2em;
+    
+    padding: auto;
+    z-index: 15;
+}
+
 #deal {
-    margin: 5px;
+    margin: auto;
     width: 100px;
     height: 50px;
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
 }
 
 #draw {
-    margin: 5px;
+    margin: auto;
     width: 100px;
     height: 50px;
     font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
 }
 
 #clear {
-    margin: 5px;
+    display: flex;
+    margin: auto;
     width: 100px;
     height: 50px;
     font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+#restart {
+    display: flex;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+#instructions:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#deal:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#draw:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#clear:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#restart:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 2em;
+    z-index: 10;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 50px;
+    z-index: 10;
+}
+
+.buttons-title {
+    flex-direction: column;
+    
+}
+
+.instructions {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+    margin: auto;
+    padding: 20px;
+    display: none;
+    z-index: 10;
+
+
+    list-style-type: circle;
 }
